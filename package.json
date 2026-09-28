@@ -8,7 +8,7 @@
     "test": "node test/mime.test.js"
   },
   "dependencies": {
-    "mime": "4.0.4"
+    "mime": "4.1.1"
   },
   "license": "MIT"
 }
