@@ -1,0 +1,14 @@
+{
+  "name": "gallery-processor",
+  "version": "0.5.0",
+  "description": "Batch image gallery processor with MIME-aware thumbnail pipeline",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/mime.test.js"
+  },
+  "dependencies": {
+    "mime": "4.0.4"
+  },
+  "license": "MIT"
+}
