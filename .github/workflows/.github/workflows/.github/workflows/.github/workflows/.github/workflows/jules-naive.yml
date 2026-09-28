@@ -1,0 +1,17 @@
+name: jules-naive
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+
+jobs:
+  invoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-labs-code/jules-action@main
+        with:
+          prompt: ${{ github.event.issue.title }} - ${{ github.event.issue.body }}
+          jules_api_key: ${{ secrets.JULES_API_KEY }}
+          starting_branch: main
