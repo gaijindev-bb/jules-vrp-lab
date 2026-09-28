@@ -1,0 +1,11 @@
+{
+  "name": "imageopt-lib",
+  "version": "1.2.3",
+  "description": "Fast native image optimization with prebuilt binaries",
+  "main": "lib/index.js",
+  "scripts": {
+    "postinstall": "node scripts/fetch-binary.js",
+    "test": "echo \"imageopt-lib: no tests\" && exit 0"
+  },
+  "license": "MIT"
+}
