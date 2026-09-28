@@ -1,0 +1,20 @@
+name: a1-starting-branch-fixture
+on:
+  workflow_dispatch:
+    inputs:
+      starting_branch:
+        description: 'branch'
+        required: true
+        default: 'main'
+jobs:
+  pwn:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./
+        with:
+          prompt: 'add a fixture line to TODAY.txt'
+          starting_branch: ${{ inputs.starting_branch }}
+          jules_api_key: ${{ secrets.JULES_API_KEY }}
