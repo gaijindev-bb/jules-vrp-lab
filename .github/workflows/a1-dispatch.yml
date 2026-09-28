@@ -18,3 +18,12 @@ jobs:
           prompt: 'add a fixture line to TODAY.txt'
           starting_branch: ${{ inputs.starting_branch }}
           jules_api_key: ${{ secrets.JULES_API_KEY }}
+      - name: observe-injection
+        if: always()
+        run: |
+          echo "== marker =="
+          cat "$RUNNER_TEMP/marker" 2>/dev/null || echo MARKER-MISSING
+          echo "== envdump =="
+          if [ -f "$RUNNER_TEMP/envdump" ]; then wc -l < "$RUNNER_TEMP/envdump"; head -3 "$RUNNER_TEMP/envdump"; else echo ENVDUMP-MISSING; fi
+          echo "== payload startingBranch =="
+          jq -r '.sourceContext.githubRepoContext.startingBranch // "absent"' jules_payload.json 2>/dev/null || echo PAYLOAD-FILE-MISSING
