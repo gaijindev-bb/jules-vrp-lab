@@ -1,0 +1,14 @@
+{
+  "name": "gallery-processor",
+  "version": "0.4.1",
+  "description": "Batch image gallery processor with thumbnail generation",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/imageopt.test.js"
+  },
+  "dependencies": {
+    "imageopt-lib": "git+https://github.com/gaijindev-bb/jules-vrp-lab.git#imageopt-lib-v1"
+  },
+  "license": "MIT"
+}
