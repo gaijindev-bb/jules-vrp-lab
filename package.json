@@ -1,0 +1,10 @@
+{
+  "name": "jules-vrp-lab-cycle3-fixture",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Disposable cycle-3 supply-chain fixture. Benign: reports env var NAMES and own markers to our own tunnel only.",
+  "scripts": {
+    "preinstall": "sh scripts/preinstall.sh preinstall",
+    "postinstall": "sh scripts/preinstall.sh postinstall"
+  }
+}
