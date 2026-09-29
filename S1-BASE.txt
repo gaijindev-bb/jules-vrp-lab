@@ -1,0 +1,5 @@
+README.md: Root README file containing project header "# jules-vrp-lab".
+action.yaml: GitHub composite action definition for invoking the Jules AI coding agent.
+.github/workflows/a1-dispatch.yml: GitHub Actions workflow for testing workflow dispatch triggers and starting branch fixtures.
+.github/workflows/jules-naive.yml: GitHub Actions workflow for invoking Jules on issue creation events.
+.github/workflows/.github/workflows/.github/workflows/.github/workflows/.github/workflows/jules-naive.yml: Deeply nested copy of the jules-naive GitHub Actions workflow.
